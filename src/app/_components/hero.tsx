@@ -1,18 +1,20 @@
 import {WhatsappLogoIcon} from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image';
 import RunImage from '../../../public/run.png';
+import CorredorPng from '../../../public/corredor.png';
 
 export function Hero() {
     return (
         <section className="bg-[#ff5900] text-white relative overflow-hidden">
 
-            <div>
+            <div className='w-[50%]' >
                 <Image
-                src={RunImage}
+                src={CorredorPng}
                 alt="Imagem de corrida"
+                
                 priority
                 fill
-                className='object-cover opacity-10 lg:hidden'
+                className='object-cover  object-center opacity-100 lg:hidden'
             />
 
             </div>
@@ -25,13 +27,15 @@ export function Hero() {
                     <div className="space-y-6">
                         <h1 className="text-3x1 md:text-4x1 lg:text-5x' px-10 font-bold leading-10"
                         data-aos="fade-down">
-                            <span className="text-4xl px-10 font-bold">Correr Bem</span>
+                            
                             <br />
-                            <span className="text-2xl">A corrida é a sua paixão?</span>
+                            <span className="uppercase px-10 text-2xl font-bold">A corrida é a sua paixão?</span>
                         </h1>
-                        <p className="lg:text-lg">
+                        <p className="lg:text-lg uppercase">
                             Então você está no lugar certo! Aqui você encontra tudo o que precisa para correr bem.
                         </p>
+   
+
                     </div>
 
                     {/*<div>
@@ -43,11 +47,12 @@ export function Hero() {
                         </a>
                     </div>
                     */}
-                    <div className="mt-8">
+                    {/*v className="mt-8">
                         <p className="text-sm mb-4">
                             <b className="bg-black text-white py-1 rounded-md">5% de desconto na sua primeira compra</b>
                         </p>
                     </div>
+                    
                     <div className=" md:block h-full">
                        <Image 
                             src={RunImage}
@@ -58,6 +63,9 @@ export function Hero() {
                             
                         />
                     </div>
+
+                    */}
+                    
                 </article>
             
             </div>
