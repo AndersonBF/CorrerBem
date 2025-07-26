@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Run2Image from '../../../public/run2.jpg';
-import Run3Image from '../../../public/run3.jpg';
+import Run2Image from '../../../public/run4.jpg';
+import Run3Image from '../../../public/run5.jpg';
 import { Check } from 'lucide-react';
 
 export function About() {
