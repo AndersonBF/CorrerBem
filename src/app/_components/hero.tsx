@@ -2,6 +2,7 @@ import {WhatsappLogoIcon} from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image';
 import RunImage from '../../../public/run.png';
 import CorredorPng from '../../../public/corredor.png';
+import EquipeCorrerBem from '../../../public/equipe-correr-bem.jpg';
 
 export function Hero() {
     return (
@@ -9,12 +10,12 @@ export function Hero() {
 
             <div className='w-[50%]' >
                 <Image
-                src={CorredorPng}
+                src={EquipeCorrerBem}
                 alt="Imagem de corrida"
                 
                 priority
                 fill
-                className='object-cover  object-center opacity-100 lg:hidden'
+                className='object-cover  object-center opacity-60'
             />
 
             </div>
