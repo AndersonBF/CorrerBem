@@ -10,7 +10,7 @@ import { AosInit } from "./_components/aos-init";
 export default function Home(){
   return (
     <main>
-      <AosInit />
+     
       <Hero />
       <About />
       <Services />

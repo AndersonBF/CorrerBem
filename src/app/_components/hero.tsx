@@ -3,9 +3,14 @@ import Image from 'next/image';
 import RunImage from '../../../public/run.png';
 import CorredorPng from '../../../public/corredor.png';
 import EquipeCorrerBem from '../../../public/equipe-correr-bem.jpg';
+import { Bebas_Neue} from 'next/font/google';
+
+
 
 export function Hero() {
     return (
+       
+
         <section className="bg-[#ff5900] text-white relative overflow-hidden">
 
             <div className='w-[50%]' >
@@ -15,24 +20,36 @@ export function Hero() {
                 
                 priority
                 fill
-                className='object-cover  object-center opacity-60'
+                className='object-cover  object-center opacity-10'
             />
 
             </div>
 
             <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            <div className="container mx-auto py-16 px-4  ">
-                <article className="grid  grid-cols-1 lg:grid-cols-2 gap-8 relative">
+            <div className="container mx-auto py-0 px-2  ">
+                <article className="grid grid-cols-2 lg:grid-cols-2 relative">
 
-                    <div className="space-y-6">
-                        <h1 className="text-3x1 md:text-4x1 lg:text-5x' px-10 font-bold leading-10"
-                        data-aos="fade-down">
+                    <div className="flex items-center  ">
+                       <Image 
+                            src={RunImage}
+                            alt="Imagem de corrida"
+                            className=" w-[150px] h-[100px]] object-center"
+                            
+                            quality={100}
+
+                            
+                        />
+                    </div>
+
+                    <div className="space-y-0 text-left">
+                        <h1 className="text-3x1 md:text-5x1 lg:text-6xl font-bold leading-tight"
+                        data-aos="fade-up">
                             
                             <br />
-                            <span className="uppercase px-10 text-2xl font-bold">A corrida é a sua paixão?</span>
+                            <span className="uppercase text-4xl font-bebas text-left tracking-widest">A corrida é a sua paixão?</span>
                         </h1>
-                        <p className="lg:text-lg uppercase">
+                        <p className="font-bebas lg:text-lg ">
                             Então você está no lugar certo! Aqui você encontra tudo o que precisa para correr bem.
                         </p>
    
@@ -53,19 +70,11 @@ export function Hero() {
                             <b className="bg-black text-white py-1 rounded-md">5% de desconto na sua primeira compra</b>
                         </p>
                     </div>
-                    
-                    <div className=" md:block h-full">
-                       <Image 
-                            src={RunImage}
-                            alt="Imagem de corrida"
-                            className="object-contain"
-                            quality={100}
-
-                            
-                        />
-                    </div>
-
                     */}
+                    
+                    
+
+                  
                     
                 </article>
             

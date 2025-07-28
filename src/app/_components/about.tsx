@@ -5,10 +5,10 @@ import { Check } from 'lucide-react';
 
 export function About() {
     return (
-        <section className="bg-[#1C1C1C] py-16">
-            <div className="text-white space-y-4 mt-10 px-8">
-                <h1 className="text-white text-4xl font-bold">SOBRE</h1>
-                <p>
+        <section className="bg-[#1C1C1C] py-2">
+            <div className="text-white space-y-4 mt-10 px-8 font-[var(--font-bebas-neue)]">
+                <h1 className="text-white text-4xl font-bebas">SOBRE</h1>
+                <p className='font-[var(--font-bebas-neue)]'>
                     A corrida é uma atividade física que traz inúmeros benefícios para a saúde e o bem-estar.
                     Ela ajuda a melhorar a resistência cardiovascular, fortalecer os músculos, queimar calorias e reduzir o estresse.
                     Além disso, correr ao ar livre proporciona uma conexão com a natureza e pode ser uma ótima maneira de socializar com amigos ou participar de eventos esportivos.
