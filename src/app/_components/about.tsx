@@ -27,10 +27,11 @@ export function About() {
                         Mais de 70 alunos assessorados
                     </li>
                 </ul>
+
             </div>
 
 
-            <div className="container mx-auto flex flex-row gap-12 items-center">
+            <div className="container mx-auto flex flex-row gap-12 px-6 py-4 items-center">
                 <div className="relative w-[200px] h-[200px] rounded-3xl overflow-hidden">
                     <Image
                         src={Run2Image}

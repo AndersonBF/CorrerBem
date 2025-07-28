@@ -25,36 +25,38 @@ export function Hero() {
 
             </div>
 
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 bg-black opacity-20"></div>
 
-            <div className="container mx-auto py-0 px-2  ">
-                <article className="grid grid-cols-2 lg:grid-cols-2 relative">
+            <div className="container mx-auto py-2 px-2  ">
+                <article className="grid grid-cols-1 lg:grid-cols-1 relative">
 
                     <div className="flex items-center  ">
                        <Image 
                             src={RunImage}
                             alt="Imagem de corrida"
-                            className=" w-[150px] h-[100px]] object-center"
+                            className=" w-[100px] h-[100px]] object-left"
                             
                             quality={100}
 
                             
                         />
                     </div>
+                    
 
-                    <div className="space-y-0 text-left">
-                        <h1 className="text-3x1 md:text-5x1 lg:text-6xl font-bold leading-tight"
+                    {/*<div className="space-y-0 text-center">
+                        <h1 className="text-3x1 md:text-5x1 lg:text-10xl font-bold leading-tight"
                         data-aos="fade-up">
                             
                             <br />
-                            <span className="uppercase text-4xl font-bebas text-left tracking-widest">A corrida é a sua paixão?</span>
+                            <span className="uppercase text-3xl font-bebas text-center tracking-widest">A corrida é a sua paixão?</span>
                         </h1>
-                        <p className="font-bebas lg:text-lg ">
+                        <p className=" lg:text-lg py-2 ">
                             Então você está no lugar certo! Aqui você encontra tudo o que precisa para correr bem.
                         </p>
    
 
                     </div>
+                    */}
 
                     {/*<div>
                         <a href="#"
