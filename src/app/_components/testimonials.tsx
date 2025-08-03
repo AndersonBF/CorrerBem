@@ -8,28 +8,34 @@ import BiazinImage from '../../../public/biazin.jpg'
 import Image from 'next/image';
 
 const testimonials = [{
-    author: 'Biazin',
-    description: 'Oferecemos uma variedade de serviços para atender às suas necessidades de corrida. Estamos aqui para ajudar você a alcançar seus objetivos.',
+    author: 'Carla',
+    description: 'Eu amo a Assessoria, recebemos várias dicas para a evolução que sozinhos não iriamos conseguir.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: BiazinImage,
    
 
 },
 {
-    author: 'Biazin',
-    description: 'Oferecemos uma variedade de serviços para atender às suas necessidades de corrida. Estamos aqui para ajudar você a alcançar seus objetivos.',
+    author: 'Gabrielle',
+    description: 'Eu corria mas não via evolução, estava estagnada. Hoje, em apenas 3 meses de acompanhamento, vejo resultados que não alcancei sozinha. Ter um bom direcionamento faz toda diferença.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: BiazinImage,
 },
 {
-    author: 'Biazin',
-    description: 'Oferecemos uma variedade de serviços para atender às suas necessidades de corrida. Estamos aqui para ajudar você a alcançar seus objetivos.',
+    author: 'Leon',
+    description: 'O Treinador Mateus é bastante atencioso e disciplinado, sempre passa treinos específicos para cada tipo de objetivo.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: BiazinImage,
 },
 {
-    author: 'Biazin',
-    description: 'Oferecemos uma variedade de serviços para atender às suas necessidades de corrida. Estamos aqui para ajudar você a alcançar seus objetivos.',
+    author: 'Claudineia',
+    description: 'A Assessoria me ajudou a ter constância nos treinos. Criei uma rotina de treinos que antes não tinha.',
+    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
+    image: BiazinImage,
+},
+{
+    author: 'Maria',
+    description: 'Além de evoluir na velocidade, melhorei minha capacidade cardiorrespiratória, conseguindo realizar os treinos propostos e demais atividades com muito mais facilidade.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: BiazinImage,
 }

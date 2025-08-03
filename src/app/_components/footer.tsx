@@ -17,7 +17,7 @@ export function Footer() {
         <section className="bg-[#ff7b00] py-16 text-white">
             <div className="container mx-auto px-4">
 
-                <div className="border-b border-white/20 pb-8">
+              {/*}  <div className="border-b border-white/20 pb-8">
                     <h4 className="text-3xl font-semibold mb-8 text-center text-white">Nossas Marcas</h4>
                     <div className="grid grid-cols-2 lg:grid-cols-6 gap-8">
                         {brands.map((item, index) => (
@@ -34,6 +34,7 @@ export function Footer() {
                         ))}
                     </div>
                 </div>
+                */}
 
                 <footer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-5">
                     <div>
