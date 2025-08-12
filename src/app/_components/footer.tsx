@@ -53,22 +53,22 @@ export function Footer() {
                     <div>
                         <h3 className="text-2xl font-semibold mb-2">Contatos</h3>
                         <p>Email: assessoriacorrerbem@outlook.com</p>
-                        <p>Telefone: (11) 1234-5678</p>
-                        <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
+                        <p>Telefone: (49) 99830-3859</p>
+                        <p>Endereço: Toledo, PR</p>
                     </div>
 
                     <div>
                         <h3 className="text-2xl font-semibold mb-2">Redes Sociais</h3>
                         <div className="flex gap-4">
-                            <a href="#">
+                            {/*<a href="#">
                                 <FacebookLogoIcon className='w-8 h-8'/>
-                            </a>
-                            <a href="#">
+                            </a>*/}
+                            <a href="https://www.instagram.com/correrbemtoledo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                                 <InstagramLogoIcon className='w-8 h-8' />
                             </a>
-                            <a href="#">
+                            {/*<a href="#">
                                 <YoutubeLogoIcon className='w-8 h-8'/>
-                            </a>
+                            </a>*/}
                         </div>
                     </div>
                 </footer>
