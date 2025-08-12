@@ -64,12 +64,10 @@ export function Services() {
                                             <div className='flex-1 flex items-start justify-between'>
                                                 
                                                 <div className='flex gap-3'>
-                                                    <span className='text-3x1'>{item.icon}</span>
+                                                    
                                                     <div>
                                                         <h3 className='font-bold text-x1 my-1'>{item.title}</h3>
-                                                        <p className='text-gray-400 text-sm select-none'>
-                                                            {item.description}
-                                                        </p>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
