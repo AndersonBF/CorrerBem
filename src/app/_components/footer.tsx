@@ -43,7 +43,7 @@ export function Footer() {
                             A Correr Bem é uma assessoria esportiva especializada em corrida, oferecendo treinos personalizados e acompanhamento profissional para corredores de todos os níveis.
                         </p>
                         <a
-                            href="#"
+                            href="https://api.whatsapp.com/send?phone=5549998303859"
                             className="bg-green-500 px-4 py-2 rounded-md"
                         >
                             Contato via WhatsApp
@@ -52,7 +52,7 @@ export function Footer() {
 
                     <div>
                         <h3 className="text-2xl font-semibold mb-2">Contatos</h3>
-                        <p>Email: teste@teste.com</p>
+                        <p>Email: assessoriacorrerbem@outlook.com</p>
                         <p>Telefone: (11) 1234-5678</p>
                         <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
                     </div>

@@ -16,8 +16,8 @@ export default function Home(){
       
       <FraseDeEfeito />
       <About />
-      <Services />
       <Testimonials />
+      <Services />
       <Footer />
     </main>
   );
