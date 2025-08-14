@@ -7,17 +7,17 @@ export function Plans() {
     {
       name: 'Trimestral',
       price: 'R$329,90',
-      description: 'Pagamento a cada 3 meses. Economize e mantenha consistência.',
+      description: '3 meses. Economize e mantenha consistência.',
     },
     {
       name: 'Semestral',
       price: 'R$629,90',
-      description: 'Pagamento a cada 6 meses. Resultados a longo prazo.',
+      description: '6 meses. Resultados a longo prazo.',
     },
     {
       name: 'Anual',
       price: 'R$1179,90',
-      description: 'Pagamento anual. Compromisso completo para evolução máxima.',
+      description: '12 meses. Maior desconto, compromisso completo para evolução máxima.',
     },
   ];
 

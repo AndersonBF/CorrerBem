@@ -6,7 +6,7 @@ export function AboutMe() {
     return (
         <section className="bg-[#1C1C1C] py-6 px-0 relative overflow-hidden">
             {/* Imagem de fundo fixa na esquerda, ocupando toda a altura */}
-            <div className="absolute left-0 top-0 h-full  z-0">
+            <div className="absolute left-0 top-0 h-full px-15 z-0">
                 <Image
                     src={SobreMim}
                     alt="Imagem de corrida"
@@ -14,7 +14,11 @@ export function AboutMe() {
                     height={400} //altura
                     
                     quality={100}
-                    className="object-cover opacity-100"
+                    className="
+                        object-cover opacity-100
+                        w-[180px] sm:w-[220px] md:w-[260px] lg:w-[250px]
+                        h-full
+                    "
                     priority
                 />
             </div>
@@ -24,11 +28,15 @@ export function AboutMe() {
                 <h2 className=" text-2xl font-bold text-white mb-4 lg:text-4xl sm:text-2xl md:text-3xl  ">Sobre Mim</h2>
                      <li className="flex items-center gap-1 sm:gap-2">
             <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
+            Treinador da Assessoria Esportiva Correr Bem
+          </li>
+          <li className="flex items-center gap-1 sm:gap-2">
+            <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
             Profissional de Educação Física (CREF 045187-G/PR)
           </li>
           <li className="flex items-center gap-1 sm:gap-2">
             <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
-            Formado na UNIOESTE
+            Formado na Universidade Estadual do Oeste do Paraná
           </li>
           <li className="flex items-center gap-1 sm:gap-2">
             <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
@@ -36,15 +44,11 @@ export function AboutMe() {
           </li>
           <li className="flex items-center gap-1 sm:gap-2">
             <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
-            Cristão/Presbiteriano
+            Maratonista
           </li>
           <li className="flex items-center gap-1 sm:gap-2">
             <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
-            Fundador da Assessoria Esportiva Correr Bem
-          </li>
-          <li className="flex items-center gap-1 sm:gap-2">
-            <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
-            Meio Maratonista (20.10.24)
+            + de 200 alunos transformados
           </li>
                 </ul>
             </div>
