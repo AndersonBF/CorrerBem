@@ -29,19 +29,8 @@ const testimonials = [{
     description: 'O Treinador Mateus é bastante atencioso e disciplinado, sempre passa treinos específicos para cada tipo de objetivo.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: LeonImagem,
-},
-{
-    author: 'Claudineia',
-    description: 'A Assessoria me ajudou a ter constância nos treinos. Criei uma rotina de treinos que antes não tinha.',
-    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
-    image: BiazinImage,
-},
-{
-    author: 'Maria',
-    description: 'Além de evoluir na velocidade, melhorei minha capacidade cardiorrespiratória, conseguindo realizar os treinos propostos e demais atividades com muito mais facilidade.',
-    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
-    image: BiazinImage,
 }
+
 ]
 
 
@@ -73,7 +62,7 @@ export function Testimonials() {
                         <div className='overflow-hidden' ref={emblaRef}>
                             <div className='flex'>
                                 {testimonials.map((item, index) => (
-                                    <div key={index} className="flex-[0_0_100%] nub-w-0  px-3 ">
+                                    <div key={index} className="flex-[0_0_100%] nub-w-0 md:flex-[0_0_calc(100%/3)] px-3 ">
                                         <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                                             <div className='flex flex-col items-center text-center space-y-4'>
                                                 <div className='relative w-24 h-24'>

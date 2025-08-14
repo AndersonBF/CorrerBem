@@ -10,7 +10,7 @@ export function FraseDeEfeito() {
                 </p>
 
                  <a
-                            href="#"
+                            href="https://api.whatsapp.com/send?phone=5549998303859"
                             className="bg-green-500 px-5 py-3 rounded-md"
                         >
                             Saiba mais pelo WhatsApp

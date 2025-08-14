@@ -7,6 +7,8 @@ import {Testimonials} from "./_components/testimonials";
 import { Footer } from "./_components/footer";
 import { AosInit } from "./_components/aos-init";
 import { FraseDeEfeito } from "./_components/frasedeefeito";
+import { AboutMe } from "./_components/aboutme";
+import { Plans } from "./_components/planos";
 
 export default function Home(){
   return (
@@ -18,6 +20,8 @@ export default function Home(){
       <About />
       <Testimonials />
       <Services />
+      <AboutMe />
+      <Plans  />
       <Footer />
     </main>
   );

@@ -13,21 +13,21 @@ export function Hero() {
 
         <section className="bg-[#ff5900] text-white relative overflow-hidden">
 
-            <div className='w-[50%]' >
+            <div className='w-[80%]' >
                 <Image
                 src={EquipeCorrerBem}
                 alt="Imagem de corrida"
                 
                 priority
                 fill
-                className='object-cover  object-center opacity-10'
+                className='object-cover  object-center opacity-30'
             />
 
             </div>
 
             <div className="absolute inset-0 bg-black opacity-20"></div>
 
-            <div className="container mx-auto py-2 px-2  ">
+            <div className="container mx-auto py-1 px-2  ">
                 <article className="grid grid-cols-1 lg:grid-cols-1 relative">
 
                     <div className="flex items-center  ">

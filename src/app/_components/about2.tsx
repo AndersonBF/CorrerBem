@@ -17,40 +17,38 @@ export function About() {
                 </p>*/}
                 <ul className="space-y-4">
                     <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        A Nossa Metodologia de Treino é  focada em você, nas suas metas e no seu ritmo. Não usamos planos genéricos, mas sim um processo personalizado para garantir que sua jornada na corrida de rua seja segura, prazerosa e acima de tudo eficaz.
+                        <Check className="text-red-500" />
+                        
+                         Planilhas de treino personalizadas: Desenvolvidas de acordo com seu nível e metas.
 
                     </li>
                     <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        Conheça a si mesmo, conheça seu treino.
-                        Primeiramente, enviamos um questionário completo para entender sua história, seu nível de experiência, seus objetivos (seja completar 5k, melhorar seu tempo nos 10k, ou simplesmente ter mais qualidade de vida) e sua rotina. É a partir dessas informações que construímos a base do seu sucesso.
+                        <Check className="text-red-500" />
+                        Suporte constante: Tire suas dúvidas e receba orientação sempre que precisar.
                     </li>
                     <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        Tecnologia a seu favor: 
-                        Após entendermos seus objetivos, você fará um cadastro no SisRUN Elite, nosso aplicativo exclusivo para gerenciamento de treinos. É nessa plataforma que você recebe seus treinos e sincroniza diretamente em seu relógio! Inteligência, modernidade e praticidade.
+                        <Check className="text-red-500" />
+                        Acompanhamento real: Utilizamos o aplicativo SisRUN Elite para controle e análise de treinamento.
                     </li>
                     <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        Processo Individual: 
-                        Nosso treinador irá elaborar e enviar a você uma planilha de treino 100% individualizada. Isso significa que cada sessão de treino, cada quilômetro e cada tempo de descanso é pensado exclusivamente para suas necessidades.
+                        <Check className="text-red-500" />
+                        WhatsApp do Treinador: Tenha acesso ao contato do Treinador para tirar todas as suas dúvidas!
                     </li>
                     <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
+                        <Check className="text-red-500" />
                          Avaliações frequentes: Com avaliações físicas personalizadas avaliando frequentemente a evolução nossos alunos.
 
                     </li>
                     <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
+                        <Check className="text-red-500" />
                         Comunidade engajadora: Conecte-se com outros corredores e mantenha-se motivado.
                     </li>
                     <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
+                        <Check className="text-red-500" />
                         Exercícios de fortalecimento: Exercícios de alongamento, mobilidade e educativos para melhorar a mecânica da corrida!
                     </li>
                     <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
+                        <Check className="text-red-500" />
                          Resultados comprovados: Mais de 150 alunos satisfeitos atestam a qualidade e profissionalismo da nossa Assessoria.
                     </li>
                     
