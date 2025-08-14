@@ -1,11 +1,11 @@
 export function FraseDeEfeito() {
     return (
-        <section className="py-10 px-10">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+        <section className="py-10 px-10 md:py-10">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-0 md:gap-10">
                 
                 {/* Coluna de texto */}
                 <div className="text-left md:w-2/5">
-                    <span className="uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bebas tracking-widest block py-0.5 md:py-1 text-orange-500">
+                    <span className="uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bebas tracking-widest block py-0 md:py-0 text-orange-500">
                         Corra Mais rápido e mais longe com a Assessoria Correr Bem!
                     </span>
                    
@@ -25,7 +25,7 @@ export function FraseDeEfeito() {
                 </div>
 
                 {/* Coluna da imagem */}
-                <div className="md:w-5/10 flex justify-center">
+                <div className="md:w-5/10 flex  justify-center">
                     <img 
                         src="/correr-bem-treianao.jpg" 
                         alt="Treino da Correr Bem Toledo" 

@@ -13,7 +13,7 @@ export function Hero() {
 
         <section className="bg-[#ff5900] text-white relative overflow-hidden">
 
-            <div className='w-[80%]' >
+            <div className='w-[30%]' >
                 <Image
                 src={EquipeCorrerBem}
                 alt="Imagem de corrida"
@@ -34,7 +34,7 @@ export function Hero() {
                        <Image 
                             src={RunImage}
                             alt="Imagem de corrida"
-                            className=" w-[100px] h-[100px]] object-left"
+                            className=" w-[50px]  md:w-[100px] object-left"
                             
                             quality={100}
 

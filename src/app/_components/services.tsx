@@ -6,7 +6,7 @@ import { WhatsappLogoIcon } from '@phosphor-icons/react';
 import { Clock } from 'lucide-react';
 
 const services = [{
-    title: 'Mais de 150 alunos Assessoradas!'
+    title: 'Mais de 200 alunos Assessoradas!'
     //description: 'Mais de 150 alunos Assessoradas!',
     //icon: <WhatsappLogoIcon size={24} className="text-green-500" />
    

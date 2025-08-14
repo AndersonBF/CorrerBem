@@ -22,7 +22,7 @@ export function Plans() {
   ];
 
   return (
-    <section className="bg-black py-16 px-4">
+    <section className="bg-[#1C1C1C] py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12">Nossos Planos</h2>
 
