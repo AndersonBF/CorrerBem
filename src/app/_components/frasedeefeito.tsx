@@ -20,7 +20,8 @@ export function FraseDeEfeito() {
 
                     <p className="text-base sm:text-lg md:text-2xl lg:text-3xl font-bold py-6 text-orange-500">
                         Você sonha em correr sua primeira prova, melhorar seu tempo ou superar seus limites? 
-                        A Correr Bem Toledo é a assessoria esportiva que vai te ajudar a transformar esse sonho em realidade!
+                        A Assessoria Esportiva Correr Bem  é a assessoria esportiva de corrida de rua que vai te ajudar a transformar esse sonho em realidade!
+                        
                     </p>
                 </div>
 
