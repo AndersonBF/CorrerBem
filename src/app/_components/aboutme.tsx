@@ -16,8 +16,8 @@ export function AboutMe() {
                     quality={100}
                     className="
                         object-cover opacity-100
-                        w-[200px] sm:w-[300px] md:w-[300px] lg:w-[250px]
-                        h-[225px] sm:h-[350px] md:h-[300px] lg:h-[400px]
+                        w-[180px] sm:w-[300px] md:w-[300px] lg:w-[250px]
+                        h-[225px] sm:h-[350px] md:h-[300px] lg:h-[300px]
                     "
                     priority
                 />
@@ -26,7 +26,8 @@ export function AboutMe() {
           <div className="relative  pl-[180px] justify-end px-0 py-0  z-10 sm:pl-[300px] md:pl-[300px] lg:pl-[200px]">
                 <ul className="text-white space-y-1 text-xs  max-w-xl w-full pr-0 text-1xl sm:text-1xl md:text-2xl ml-auto lg:text-2xl  mx-auto">
                 <h2 className=" text-2xl font-bold text-white mb-4 lg:text-4xl sm:text-2xl md:text-3xl  ">Mateus Biazin</h2>
-                     <li className="flex items-center gap-1 sm:gap-2">
+
+          <li className="flex items-center gap-1 sm:gap-2">
             <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
             Treinador da Assessoria Esportiva Correr Bem
           </li>

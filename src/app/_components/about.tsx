@@ -1,100 +1,67 @@
 import Image from 'next/image';
 import Run2Image from '../../../public/run4.jpg';
-import Run3Image from '../../../public/run5.jpg';
 import Run4Image from '../../../public/biazin-com-leon.jpg';
 import Run5Image from '../../../public/equipe-correr-bem.jpg';
 import { Check } from 'lucide-react';
 
 export function About() {
+    const blocks = [
+        {
+            img: Run2Image,
+            texts: [
+                `A Nossa Metodologia de Treino é focada em você, nas suas metas e no seu ritmo. Não usamos planos genéricos, mas sim um processo personalizado para garantir que sua jornada na corrida de rua seja segura, prazerosa e acima de tudo eficaz.`,
+                `Primeiramente, enviamos um questionário completo para entender sua história, seu nível de experiência, seus objetivos (seja completar 5k, melhorar seu tempo nos 10k, ou simplesmente ter mais qualidade de vida) e sua rotina. É a partir dessas informações que construímos a base do seu sucesso.`
+            ]
+        },
+        {
+            img: Run4Image,
+            texts: [
+                `Tecnologia a seu favor: Após entendermos seus objetivos, você fará um cadastro no SisRUN Elite, nosso aplicativo exclusivo para gerenciamento de treinos. É nessa plataforma que você recebe seus treinos e sincroniza diretamente em seu relógio! Inteligência, modernidade e praticidade.`,
+                `Processo Individual: Nosso treinador irá elaborar e enviar a você uma planilha de treino 100% individualizada. Isso significa que cada sessão de treino, cada quilômetro e cada tempo de descanso é pensado exclusivamente para suas necessidades.`,
+                `Avaliações frequentes: Com avaliações físicas personalizadas avaliamos frequentemente a evolução nossos alunos.`
+            ]
+        },
+        {
+            img: Run5Image,
+            texts: [
+                `Comunidade engajadora: Conecte-se com outros corredores e mantenha-se motivado.`,
+                `Exercícios de fortalecimento: Exercícios de alongamento, mobilidade e educativos para melhorar a mecânica da corrida!`,
+                `Resultados comprovados: Mais de 200 alunos satisfeitos atestam a qualidade e profissionalismo da nossa Assessoria.`
+            ]
+        }
+    ];
+
     return (
-        <section className="bg-[#1C1C1C] py-2">
-            <div className="text-white space-y-4 mt-10 px-8 font-[var(--font-bebas-neue)]">
-                {/*<h1 className="text-white text-4xl font-bebas">SOBRE</h1>
-                <p className='font-[var(--font-bebas-neue)]'>
-                    A corrida é uma atividade física que traz inúmeros benefícios para a saúde e o bem-estar.
-                    Ela ajuda a melhorar a resistência cardiovascular, fortalecer os músculos, queimar calorias e reduzir o estresse.
-                    Além disso, correr ao ar livre proporciona uma conexão com a natureza e pode ser uma ótima maneira de socializar com amigos ou participar de eventos esportivos.
-                </p>*/}
-                <ul className="space-y-4">
-                    <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        A Nossa Metodologia de Treino é  focada em você, nas suas metas e no seu ritmo. Não usamos planos genéricos, mas sim um processo personalizado para garantir que sua jornada na corrida de rua seja segura, prazerosa e acima de tudo eficaz.
+        <section className="bg-[#1C1C1C] py-8">
+            <div className="space-y-12 px-8">
+                {blocks.map((block, index) => (
+                    <div
+                        key={index}
+                        className={`flex flex-col md:flex-row items-start gap-6 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
+                    >
+                        {/* Imagem */}
+                        <div className="relative w-full md:w-1/2 h-[250px] rounded-3xl overflow-hidden flex-shrink-0">
+                            <Image
+                                src={block.img}
+                                alt="Imagem de corrida"
+                                fill
+                                quality={100}
+                                className="object-cover [object-position:center_30%] hover:scale-110 duration-300"
+                            />
+                        </div>
 
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        Conheça a si mesmo, conheça seu treino.
-                        Primeiramente, enviamos um questionário completo para entender sua história, seu nível de experiência, seus objetivos (seja completar 5k, melhorar seu tempo nos 10k, ou simplesmente ter mais qualidade de vida) e sua rotina. É a partir dessas informações que construímos a base do seu sucesso.
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        Tecnologia a seu favor: 
-                        Após entendermos seus objetivos, você fará um cadastro no SisRUN Elite, nosso aplicativo exclusivo para gerenciamento de treinos. É nessa plataforma que você recebe seus treinos e sincroniza diretamente em seu relógio! Inteligência, modernidade e praticidade.
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        Processo Individual: 
-                        Nosso treinador irá elaborar e enviar a você uma planilha de treino 100% individualizada. Isso significa que cada sessão de treino, cada quilômetro e cada tempo de descanso é pensado exclusivamente para suas necessidades.
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                         Avaliações frequentes: Com avaliações físicas personalizadas avaliando frequentemente a evolução nossos alunos.
-
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        Comunidade engajadora: Conecte-se com outros corredores e mantenha-se motivado.
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                        Exercícios de fortalecimento: Exercícios de alongamento, mobilidade e educativos para melhorar a mecânica da corrida!
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <Check className="text-red-500 flex-shrink-0" />
-                         Resultados comprovados: Mais de 150 alunos satisfeitos atestam a qualidade e profissionalismo da nossa Assessoria.
-                    </li>
-                    
-                    
-                </ul>
-
+                        {/* Texto com múltiplos parágrafos */}
+                        <div className="text-white md:w-1/2 font-[var(--font-bebas-neue)] text-lg space-y-4">
+                            {block.texts.map((t, i) => (
+                                <div key={i} className="flex items-start">
+                                    <Check className="text-red-500 flex-shrink-0 mt-1 mr-2" />
+                                    <p>{t}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
-
-
-            <div className="container mx-auto flex flex-row gap-2 px-6 py-4 items-center">
-                <div className="relative w-[200px] h-[200px] rounded-3xl overflow-hidden">
-                    <Image
-                        src={Run2Image}
-                        alt="Imagem de corrida"
-                        fill
-                        quality={100}
-                        className="object-cover hover:scale-110 duration-300"
-                        priority
-                    />
-                </div>
-                
-                <div className="relative w-[200px] h-[200px] rounded-3xl overflow-hidden">
-                    <Image
-                        src={Run4Image}
-                        alt="Imagem de corrida"
-                        fill
-                        quality={100}
-                        className="object-cover hover:scale-110 duration-300"
-                        priority
-                    />
-                </div>
-                <div className="relative w-[200px] h-[200px] rounded-3xl overflow-hidden">
-                    <Image
-                        src={Run5Image}
-                        alt="Imagem de corrida"
-                        fill
-                        quality={100}
-                        className="object-cover hover:scale-110 duration-300"
-                        priority
-                    />
-                </div>
-                
-            </div>
-            
         </section>
-    )
+    );
 }

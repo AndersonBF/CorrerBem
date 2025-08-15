@@ -30,7 +30,7 @@ export function Plans() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 flex-1 max-w-sm mx-auto hover:scale-105 transition-transform duration-300"
+              className="bg-white rounded-2xl p-6 flex-1 w-full hover:scale-105 transition-transform duration-300"
             >
               <h3 className="text-xl font-bold mb-4">{plan.name}</h3>
               <p className="text-2xl font-extrabold mb-4">{plan.price}</p>

@@ -8,27 +8,35 @@ import BiazinImage from '../../../public/biazin.jpg'
 import LeonImagem from '../../../public/rosto-leon.jpg'
 import CarlaImagem from '../../../public/rosto-carla.jpg';
 import GabrielleImagem from '../../../public/rosto-gabrielle.jpg';
+import EligeImagem from '../../../public/rosto-elige.jpg';
 import Image from 'next/image';
 
 const testimonials = [{
-    author: 'Carla',
-    description: 'Eu amo a Assessoria, recebemos várias dicas para a evolução que sozinhos não iriamos conseguir.',
-    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
-    image: CarlaImagem,
-   
-
-},
-{
-    author: 'Gabrielle',
+    
+   author: 'Gabrielle',
     description: 'Eu corria mas não via evolução, estava estagnada. Hoje, em apenas 3 meses de acompanhamento, vejo resultados que não alcancei sozinha. Ter um bom direcionamento faz toda diferença.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: GabrielleImagem,
+
 },
 {
     author: 'Leon',
     description: 'O Treinador Mateus é bastante atencioso e disciplinado, sempre passa treinos específicos para cada tipo de objetivo.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: LeonImagem,
+    
+},
+{
+    author: 'Carla',
+    description: 'Eu amo a Assessoria, recebemos várias dicas para a evolução que sozinhos não iriamos conseguir.',
+    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
+    image: CarlaImagem,
+},
+{
+    author: 'Elige',
+    description: 'Estou evoluindo, aumentando minha resistência e melhorando meu tempo também.',
+    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
+    image: EligeImagem,
 }
 
 ]
@@ -55,7 +63,7 @@ export function Testimonials() {
         <section className ="bg-[#ff8800] py-16">
             <div className="container mx-auto px-4">
                
-                    <h2 className="font-4xl font-bold text-center mb-12">Depoimentos </h2>
+                    <h2 className="text-4xl font-bold text-center mb-12">Depoimentos</h2>
 
                     <div className="relative max-4xl mx-auto">  
 
