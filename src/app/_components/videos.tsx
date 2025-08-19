@@ -13,8 +13,8 @@ const testimonials = [
     src: '/depoimento2.mp4'
   },
   {
-    name: 'Leticia',
-    src: '/depoimento3.mp4'
+    name: 'Nisse',
+    src: '/depoimento4.mp4'
   }
 ];
 

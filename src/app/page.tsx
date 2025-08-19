@@ -21,10 +21,10 @@ export default function Home(){
       <FraseDeEfeito />
       <About />
       <Testimonials />
+      <Videost />
       <Services />
       <AboutMe />
       <Plans  />
-      <Videost />
       <Galeria />
       <Footer />
     </main>

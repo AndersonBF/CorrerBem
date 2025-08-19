@@ -1,6 +1,6 @@
 export function FraseDeEfeito() {
     return (
-        <section className="py-10 px-10 md:py-10">
+        <section className="py-10 px-10 md:py-10 lg:px-40">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-0 md:gap-10">
                 
                 {/* Coluna de texto */}
