@@ -8,7 +8,7 @@ import { Footer } from "./_components/footer";
 import { AosInit } from "./_components/aos-init";
 import { FraseDeEfeito } from "./_components/frasedeefeito";
 import { AboutMe } from "./_components/aboutme";
-import { Plans } from "./_components/planos";
+import  {Plans}  from "./_components/planos";
 import { Videost } from "./_components/videos";
 import { Galeria } from "./_components/galeria";
 

@@ -4,12 +4,13 @@ import Run4Image from '../../../public/biazin-com-leon.jpg';
 import Run5Image from '../../../public/equipe-correr-bem.jpg';
 import Run6Image from '../../../public/run6.png';
 import Run7Image from '../../../public/run7.png';
+import Run8Image from '../../../public/galeria3.png';
 import { Check } from 'lucide-react';
 
 export function About() {
     const blocks = [
         {
-            img: Run6Image,
+            img: Run8Image,
             texts: [
                 `A Nossa Metodologia de Treino é focada em você, nas suas metas e no seu ritmo. Não usamos planos genéricos, mas sim um processo personalizado para garantir que sua jornada na corrida de rua seja segura, prazerosa e acima de tudo eficaz.`,
                 `Primeiramente, enviamos um questionário completo para entender sua história, seu nível de experiência, seus objetivos (seja completar 5k, melhorar seu tempo nos 10k, ou simplesmente ter mais qualidade de vida) e sua rotina. É a partir dessas informações que construímos a base do seu sucesso.`
