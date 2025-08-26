@@ -11,6 +11,9 @@ import GabrielleImagem from '../../../public/rosto-gabrielle.jpg';
 import EligeImagem from '../../../public/rosto-elige.jpg';
 import RavenaImagem from '../../../public/rosto-ravena.png';
 import LuanaImagem from '../../../public/rosto-luana.png';
+import AlexImagem from '../../../public/rosto-alex.jpg';
+import VanessaImagem from '../../../public/rosto-vanessa.png';
+import GabiImagem from '../../../public/rosto-gabi.jpg';
 import Image from 'next/image';
 
 const testimonials = [{
@@ -51,7 +54,27 @@ const testimonials = [{
     description: 'Com as planilhas tenho um objetivo e disciplina maior, tendo um rumo para os treinos.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: LuanaImagem,
-}
+},
+{
+    author: 'Alex',
+    description: 'Sai de um pace de 06:40 para 05:40 em pouco tempo e sem me lesionar, além de ter saído de 97kg para 90kg mesmo sem dieta.',
+    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
+    image: AlexImagem,
+},
+{
+    author: 'Vanessa',
+    description: 'Antes da Assessoria eu não sabia meus limites, minhas zonas de frequência cardíaca e nunca pensei que conseguiria ir tão longe! Com a Assessoria corro com mais tranquilidade, sabendo meus limites e com um ótimo profissional orientando.',
+    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
+    image: VanessaImagem,
+},
+{
+    author: 'Gabi',
+    description: 'Além de evoluir na velocidade, melhorei minha capacidade cardiorrespiratória, conseguindo realizar os treinos propostos e demais atividades com muito mais facilidade.',
+    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
+    image: GabiImagem,
+},
+
+
 
 ]
 
