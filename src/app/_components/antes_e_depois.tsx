@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryImages = [
   "/antesdepois1.png",
@@ -19,12 +18,30 @@ export function AntesEDepois() {
     slidesToScroll: 1,
   });
 
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  // Atualiza índice quando muda de slide
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on("select", onSelect);
+    onSelect();
+
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi]);
+
   // Rolamento automático
   useEffect(() => {
     if (!emblaApi) return;
     const interval = setInterval(() => {
       emblaApi.scrollNext();
-    }, 4000); // troca a cada 4 segundos
+    }, 4000);
     return () => clearInterval(interval);
   }, [emblaApi]);
 
@@ -52,20 +69,18 @@ export function AntesEDepois() {
             </div>
           </div>
 
-          {/* Botões */}
-          <button
-            className="bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2"
-            onClick={() => emblaApi?.scrollPrev()}
-          >
-            <ChevronLeft className="w-6 h-6 text-gray-600" />
-          </button>
-
-          <button
-            className="bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2"
-            onClick={() => emblaApi?.scrollNext()}
-          >
-            <ChevronRight className="w-6 h-6 text-gray-600" />
-          </button>
+          {/* Botões (Dots) */}
+          <div className="flex justify-center mt-6 gap-2">
+            {galleryImages.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full ${
+                  selectedIndex === index ? "bg-orange-500" : "bg-gray-400"
+                }`}
+                onClick={() => emblaApi?.scrollTo(index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
