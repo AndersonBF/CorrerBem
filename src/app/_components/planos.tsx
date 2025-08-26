@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Script from "next/script";
 
 export function Plans() {
   const plans = [
@@ -38,88 +37,71 @@ export function Plans() {
   const whatsappLink =
     "https://api.whatsapp.com/send?phone=5549998303859&text=Vim%20pelo%20site%20da%20Assessoria%20Correr%20Bem%20e%20queria%20saber%20mais%20sobre%20a%20assessoria";
 
+  // Função para enviar eventos para o GTM
+  const pushGTMEvent = (eventName: string, plan?: string) => {
+    if (typeof window !== "undefined" && (window as any).dataLayer) {
+      (window as any).dataLayer.push({ event: eventName, plan });
+    }
+  };
+
+  // Função auxiliar para abrir link após disparar evento
+  const handleLinkClick = (url: string, eventName: string, plan?: string) => {
+    pushGTMEvent(eventName, plan);
+    window.open(url, "_blank");
+  };
+
   return (
-    <>
-      {/* Google Tag Manager - Script */}
-      <Script
-          id="gtm-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id=GTM-NTK5TZ73'+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-NTK5TZ73');
-            `,
-          }}
-        />
-      {/* End Google Tag Manager */}
+    <section className="bg-[#1C1C1C] py-16 px-4">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12">
+          Nossos Planos
+        </h2>
 
-      <section className="bg-[#1C1C1C] py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12">
-            Nossos Planos
-          </h2>
-
-          <div className="flex flex-col md:flex-row gap-6 justify-center">
-            {plans.map((plan, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-6 flex-1 w-full hover:scale-105 transition-transform duration-300"
-              >
-                <h3 className="text-xl font-bold mb-4">{plan.name}</h3>
-                <p className="text-2xl font-extrabold mb-4">{plan.price}</p>
-                <p className="text-gray-700 mb-6">{plan.description}</p>
-
-                <div className="flex flex-col gap-3">
-                  <a
-                    href={plan.linkPix}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full inline-block hover:bg-orange-600 transition-colors"
-                  >
-                    Pagar com PIX (5% de desconto)
-                  </a>
-                  <a
-                    href={plan.linkCartao}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full inline-block hover:bg-orange-600 transition-colors"
-                  >
-                    Pagar com Cartão
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 text-white">
-            <p className="mb-4 text-lg">
-              Após o pagamento, envie o comprovante pelo WhatsApp:
-            </p>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-green-600 transition-colors"
+        <div className="flex flex-col md:flex-row gap-6 justify-center">
+          {plans.map((plan, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-6 flex-1 w-full hover:scale-105 transition-transform duration-300"
             >
-              Enviar Comprovante
-            </a>
-          </div>
-        </div>
-      </section>
+              <h3 className="text-xl font-bold mb-4">{plan.name}</h3>
+              <p className="text-2xl font-extrabold mb-4">{plan.price}</p>
+              <p className="text-gray-700 mb-6">{plan.description}</p>
 
-      {/* Google Tag Manager - noscript */}
-      <noscript>
-        <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NTK5TZ73"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-      </noscript>
-      {/* End Google Tag Manager (noscript) */}
-    </>
+              <div className="flex flex-col gap-3">
+                <button
+                  onClick={() =>
+                    handleLinkClick(plan.linkPix, "pix_click", plan.name)
+                  }
+                  className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full hover:bg-orange-600 transition-colors"
+                >
+                  Pagar com PIX (5% de desconto)
+                </button>
+
+                <button
+                  onClick={() =>
+                    handleLinkClick(plan.linkCartao, "cartao_click", plan.name)
+                  }
+                  className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full hover:bg-orange-600 transition-colors"
+                >
+                  Pagar com Cartão
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 text-white">
+          <p className="mb-4 text-lg">
+            Após o pagamento, envie o comprovante pelo WhatsApp:
+          </p>
+          <button
+            onClick={() => handleLinkClick(whatsappLink, "whatsapp_click")}
+            className="bg-green-500 text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-green-600 transition-colors"
+          >
+            Enviar Comprovante
+          </button>
+        </div>
+      </div>
+    </section>
   );
 }
