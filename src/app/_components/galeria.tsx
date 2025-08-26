@@ -9,9 +9,11 @@ const galleryImages = [
   '/galeria7.png',
   '/galeria3.png',
   '/galeria4.png',
-  '/podio3.png',
   '/podio4.png',
   '/podio5.png',
+  '/podio6.png',
+  '/podio7.png',
+  '/podio3.png',
 
 ];
 
