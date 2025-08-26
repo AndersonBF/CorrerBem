@@ -12,7 +12,9 @@ export function FraseDeEfeito() {
 
                     {/* Botão com mais espaço antes */}
                     <a
-                        href="https://api.whatsapp.com/send?phone=5549998303859"
+                        href="https://api.whatsapp.com/send?phone=5549998303859&text=Vim%20pelo%20site%20da%20Assessoria%20Correr%20Bem%20e%20queria%20saber%20mais%20sobre%20a%20assessoria"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-green-500 px-5 py-3 rounded-md mt-8 inline-block"
                     >
                         Saiba mais pelo WhatsApp

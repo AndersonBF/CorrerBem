@@ -28,7 +28,7 @@ export function Plans() {
   ];
 
   // Coloque aqui o link do seu WhatsApp
-  const whatsappLink = "https://api.whatsapp.com/send?phone=5549998303859";
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5549998303859&text=Vim%20pelo%20site%20da%20Assessoria%20Correr%20Bem%20e%20queria%20saber%20mais%20sobre%20a%20assessoria";
 
   return (
     <section className="bg-[#1C1C1C] py-16 px-4">

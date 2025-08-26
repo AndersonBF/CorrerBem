@@ -43,7 +43,9 @@ export function Footer() {
                             A Correr Bem é uma assessoria esportiva especializada em corrida, oferecendo treinos personalizados e acompanhamento profissional para corredores de todos os níveis.
                         </p>
                         <a
-                            href="https://api.whatsapp.com/send?phone=5549998303859"
+                            href="https://api.whatsapp.com/send?phone=5549998303859&text=Vim%20pelo%20site%20da%20Assessoria%20Correr%20Bem%20e%20queria%20saber%20mais%20sobre%20a%20assessoria"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-green-500 px-4 py-2 rounded-md"
                         >
                             Contato via WhatsApp
