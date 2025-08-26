@@ -27,6 +27,9 @@ export function Plans() {
     },
   ];
 
+  // Coloque aqui o link do seu WhatsApp
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5549998303859";
+
   return (
     <section className="bg-[#1C1C1C] py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
@@ -62,6 +65,21 @@ export function Plans() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Instrução de envio do comprovante */}
+        <div className="mt-12 text-white">
+          <p className="mb-4 text-lg">
+            Após o pagamento, envie o comprovante pelo WhatsApp:
+          </p>
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-green-600 transition-colors"
+          >
+            Enviar Comprovante 
+          </a>
         </div>
       </div>
     </section>

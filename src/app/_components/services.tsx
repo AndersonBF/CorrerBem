@@ -1,11 +1,11 @@
 "use client";
 
 import useEmblaCarousel from 'embla-carousel-react';
-import { ChevronLeft, ChevronRight, Trophy, Users, MapPin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Trophy, Users, MapPin, Medal } from 'lucide-react';
 
 const services = [
   {
-    title: 'Mais de 200 alunos Assessoradas!',
+    title: 'Mais de 200 alunos Assessorados!',
     icon: <Users size={28} color="orange" />
   },
   {
@@ -13,11 +13,15 @@ const services = [
     icon: <MapPin size={50} color="orange" />
   },
   {
-    title: 'Mais de 40 pódios em 2025!',
+    title: 'Vice-Campeão Corrida 24h Torao Takada 2025',
+    icon: <Medal size={50} color="orange"  />
+  },
+  {
+    title: 'Mais de 60 pódios em 2025!',
     icon: <Trophy size={28} color="orange" />
   },
   {
-    title: 'A maior Assessoria Esportiva na 1ª Dife Experience Run 2025!',
+    title: 'A maior Assessoria Esportiva na  1ª Corrida Pela Vida 2025!',
     icon: <Users size={50} color="orange"  />
   }
 ];

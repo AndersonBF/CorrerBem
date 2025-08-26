@@ -9,13 +9,14 @@ const testimonials = [
     src: '/depoimento1.mp4'
   },
   {
-    name: 'Larissa',
-    src: '/depoimento2.mp4'
-  },
-  {
     name: 'Nisse',
     src: '/depoimento4.mp4'
+  },
+  {
+    name: 'Larissa',
+    src: '/depoimento2.mp4'
   }
+  
 ];
 
 export function Videost() {

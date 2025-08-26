@@ -11,6 +11,7 @@ import { AboutMe } from "./_components/aboutme";
 import  {Plans}  from "./_components/planos";
 import { Videost } from "./_components/videos";
 import { Galeria } from "./_components/galeria";
+import { AntesEDepois } from "./_components/antes_e_depois";
 
 export default function Home(){
   return (
@@ -21,6 +22,7 @@ export default function Home(){
       <FraseDeEfeito />
       <About />
       <Testimonials />
+      <AntesEDepois />
       <Videost />
       <Services />
       <AboutMe />

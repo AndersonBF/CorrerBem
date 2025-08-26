@@ -9,6 +9,8 @@ import LeonImagem from '../../../public/rosto-leon.jpg'
 import CarlaImagem from '../../../public/rosto-carla.jpg';
 import GabrielleImagem from '../../../public/rosto-gabrielle.jpg';
 import EligeImagem from '../../../public/rosto-elige.jpg';
+import RavenaImagem from '../../../public/rosto-ravena.png';
+import LuanaImagem from '../../../public/rosto-luana.png';
 import Image from 'next/image';
 
 const testimonials = [{
@@ -37,6 +39,18 @@ const testimonials = [{
     description: 'Estou evoluindo, aumentando minha resistência e melhorando meu tempo também.',
     icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
     image: EligeImagem,
+},
+{
+    author: 'Ravena',
+    description: 'Graças a Assessoria consegui 1° Lugar na Categoria e 6° Lugar Geral na Corrida do Sesc em Toledo.',
+    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
+    image: RavenaImagem,
+},
+{
+    author: 'Luana',
+    description: 'Com as planilhas tenho um objetivo e disciplina maior, tendo um rumo para os treinos.',
+    icon: <WhatsappLogoIcon size={24} className="text-green-500" />,
+    image: LuanaImagem,
 }
 
 ]
