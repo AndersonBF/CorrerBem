@@ -9,6 +9,11 @@ const galleryImages = [
   "/antesdepois3.png",
   "/antesdepois4.png",
   "/antesdepois5.png",
+  "/antesdepois6.png",
+  "/antesdepois7.png",
+  "/antesdepois8.png",
+  "/antesdepois9.png",
+  "/antesdepois10.png",
 ];
 
 export function AntesEDepois() {
