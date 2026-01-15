@@ -11,7 +11,7 @@ export function Plans() {
       linkPix:
         "https://pix.sejaefi.com.br/pagar/fb964debff9e0f627823acb068602d3ed6c72676.html",
       linkCartao:
-        "https://pagamento.sejaefi.com.br/fdc5cc7f-5cf4-43af-ac34-34674a475af1",
+        "https://pagamento.sejaefi.com.br/f6e203ff-bb56-4ee5-9463-7427a47b0cb3",
     },
     {
       name: "Semestral",
@@ -20,7 +20,7 @@ export function Plans() {
       linkPix:
         "https://pix.sejaefi.com.br/pagar/432068100459c661ffc0d19b177ca9df3305afab.html",
       linkCartao:
-        "https://pagamento.sejaefi.com.br/b1a04c42-d3db-482a-a799-99cea3ff8384",
+        "https://pagamento.sejaefi.com.br/ab0d085b-d0c4-401c-b048-b28be3692949",
     },
     {
       name: "Anual",
@@ -37,21 +37,19 @@ export function Plans() {
   const whatsappLink =
     "https://api.whatsapp.com/send?phone=5549998303859&text=Vim%20pelo%20site%20da%20Assessoria%20Correr%20Bem%20e%20queria%20saber%20mais%20sobre%20a%20assessoria";
 
-  // Função para enviar eventos para o GTM
-  const pushGTMEvent = (eventName: string, plan?: string) => {
-    if (typeof window !== "undefined" && (window as any).dataLayer) {
-      (window as any).dataLayer.push({ event: eventName, plan });
-    }
-  };
-
-  // Função auxiliar para abrir link após disparar evento
-  const handleLinkClick = (url: string, eventName: string, plan?: string) => {
-    pushGTMEvent(eventName, plan);
-    window.open(url, "_blank");
-  };
-
   return (
     <section className="bg-[#1C1C1C] py-16 px-4">
+      {/* HEAD - Google Tag Manager */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NTK5TZ73');`,
+        }}
+      />
+
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12">
           Nossos Planos
@@ -68,38 +66,49 @@ export function Plans() {
               <p className="text-gray-700 mb-6">{plan.description}</p>
 
               <div className="flex flex-col gap-3">
-                <button
-                  onClick={() =>
-                    handleLinkClick(plan.linkPix, "pix_click", plan.name)
-                  }
-                  className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full hover:bg-orange-600 transition-colors"
+                <a
+                  href={plan.linkPix}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full inline-block hover:bg-orange-600 transition-colors"
                 >
                   Pagar com PIX (5% de desconto)
-                </button>
-
-                <button
-                  onClick={() =>
-                    handleLinkClick(plan.linkCartao, "cartao_click", plan.name)
-                  }
-                  className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full hover:bg-orange-600 transition-colors"
+                </a>
+                <a
+                  href={plan.linkCartao}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full inline-block hover:bg-orange-600 transition-colors"
                 >
                   Pagar com Cartão
-                </button>
+                </a>
               </div>
             </div>
           ))}
         </div>
 
+        {/* BODY - Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NTK5TZ73"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
         <div className="mt-12 text-white">
           <p className="mb-4 text-lg">
             Após o pagamento, envie o comprovante pelo WhatsApp:
           </p>
-          <button
-            onClick={() => handleLinkClick(whatsappLink, "whatsapp_click")}
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-green-500 text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-green-600 transition-colors"
           >
             Enviar Comprovante
-          </button>
+          </a>
         </div>
       </div>
     </section>
