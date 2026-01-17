@@ -4,9 +4,9 @@ import { Check } from 'lucide-react';
 
 export function AboutMe() {
     return (
-        <section className="bg-[#1C1C1C] py-0 px-0 relative overflow-hidden">
+        <section className="bg-[#1C1C1C] py- px-0 relative overflow-hidden">
             {/* Imagem de fundo fixa na esquerda, ocupando toda a altura */}
-            <div className="absolute left-0 top-0 h-full px-0 sm:px-0 md:px-30 z-0">
+            <div className="absolute left-0 top-0 h-100% px-0 sm:px-0 md:px-100 z-0">
                 <Image
                     src={SobreMim}
                     alt="Imagem de corrida"
@@ -49,7 +49,7 @@ export function AboutMe() {
           </li>
           <li className="flex items-center gap-1 sm:gap-2">
             <Check className="text-green-500 w-2 h-2 sm:w-4 sm:h-4 flex-shrink-0" />
-            + de 200 alunos transformados
+            + de 300 alunos transformados
           </li>
                 </ul>
           </div>

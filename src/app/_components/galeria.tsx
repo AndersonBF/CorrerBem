@@ -5,15 +5,17 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const galleryImages = [
+  '/galeria8.png',
   '/galeria2.png',
+  '/galeria10.png',
   '/galeria7.png',
+  '/galeria9.png',
   '/galeria3.png',
   '/galeria4.png',
   '/podio4.png',
   '/podio5.png',
   '/podio6.png',
   '/podio7.png',
-  '/podio3.png',
 
 ];
 

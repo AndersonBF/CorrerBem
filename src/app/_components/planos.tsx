@@ -61,8 +61,8 @@ export function Plans() {
               key={index}
               className="bg-white rounded-2xl p-6 flex-1 w-full hover:scale-105 transition-transform duration-300"
             >
-              <h3 className="text-xl font-bold mb-4">{plan.name}</h3>
-              <p className="text-2xl font-extrabold mb-4">{plan.price}</p>
+              <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
+              <p className="text-4xl font-extrabold mb-4">{plan.price}</p>
               <p className="text-gray-700 mb-6">{plan.description}</p>
 
               <div className="flex flex-col gap-3">

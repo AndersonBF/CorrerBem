@@ -15,6 +15,14 @@ const testimonials = [
   {
     name: 'Larissa',
     src: '/depoimento2.mp4'
+  },
+  {
+    name: 'Luana',
+    src: '/depoimento5.mp4'
+  },
+  {
+    name: 'Isa',
+    src: '/depoimento6.mp4'
   }
   
 ];
@@ -38,12 +46,12 @@ export function Videost() {
   }
 
   return (
-    <section className="bg-[#1C1C1C] py-16">
+    <section className="bg-[#1C1C1C] py-8">
       <div className="container mx-auto px-4">
-        <h2 className="text-white text-3xl font-bold mb-8 text-center">Histórias de Sucesso</h2>
+        <h2 className="text-white text-5xl font-bold mb-8 text-center">Histórias de Sucesso</h2>
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-6">
+            <div className="flex gap-0">
               {testimonials.map((item, index) => (
                 <div
                   key={index}

@@ -51,9 +51,9 @@ export function AntesEDepois() {
   }, [emblaApi]);
 
   return (
-    <section className="bg-[#111111] py-16">
+    <section className="bg-[#1C1C1C] py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-white text-3xl font-bold mb-8 text-center">
+        <h2 className="text-white text-5xl font-bold mb-8 text-center">
           Antes e Depois
         </h2>
         <div className="relative">

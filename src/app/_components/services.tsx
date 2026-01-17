@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Trophy, Users, MapPin, Medal } from 'lucide-
 
 const services = [
   {
-    title: 'Mais de 200 alunos Assessorados!',
+    title: 'Mais de 300 alunos Assessorados!',
     icon: <Users size={28} color="orange" />
   },
   {
@@ -17,7 +17,7 @@ const services = [
     icon: <Medal size={50} color="orange"  />
   },
   {
-    title: 'Mais de 60 pódios em 2025!',
+    title: 'Mais de 100 pódios em 2025!',
     icon: <Trophy size={28} color="orange" />
   },
   {
@@ -45,7 +45,7 @@ export function Services() {
   }
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-[#1C1C1C] py-16">
       <div className="container mx-auto px-4">
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
