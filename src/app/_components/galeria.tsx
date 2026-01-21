@@ -17,6 +17,9 @@ const galleryImages = [
   '/podio6.png',
   '/podio7.png',
   '/podio8.jpeg',
+  '/podio9.png',
+  '/podio10.png',
+  '/podio11.png',
 ];
 
 export function Galeria() {

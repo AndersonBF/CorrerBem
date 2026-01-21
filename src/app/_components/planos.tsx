@@ -30,7 +30,7 @@ export function Plans() {
       linkPix:
         "https://pix.sejaefi.com.br/pagar/d2a6abc58b21353bf7a6116df7358edc0be59511.html",
       linkCartao:
-        "https://pagamento.sejaefi.com.br/9bbfc0cb-cd61-4d07-9def-d809fc28d67b",
+        "https://pagamento.sejaefi.com.br/f7ee8e0c-251e-4f21-a679-4c7b7bd57afa",
     },
   ];
 
