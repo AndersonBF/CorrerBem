@@ -67,7 +67,7 @@ export function AntesEDepois() {
                   <img
                     src={src}
                     alt={`Antes e Depois ${index + 1}`}
-                    className="w-full h-96 md:h-[30rem] object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-70 md:h-[35rem] object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               ))}

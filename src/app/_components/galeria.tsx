@@ -16,7 +16,7 @@ const galleryImages = [
   '/podio5.png',
   '/podio6.png',
   '/podio7.png',
-
+  '/podio8.jpeg',
 ];
 
 export function Galeria() {
@@ -24,6 +24,9 @@ export function Galeria() {
     loop: true,
     align: 'start',
     slidesToScroll: 1,
+    skipSnaps: false, // ajuda no loop suave
+     containScroll: 'trimSnaps', // evita que o último slide grude no primeiro
+    
   });
 
   // Rolamento automático
@@ -31,7 +34,7 @@ export function Galeria() {
     if (!emblaApi) return;
     const interval = setInterval(() => {
       emblaApi.scrollNext();
-    }, 3000); // troca a cada 3 segundos
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [emblaApi]);
@@ -40,18 +43,25 @@ export function Galeria() {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <section className="bg-[#1C1C1C] py-16">
+    <section className="bg-[#1C1C1C] py-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-white text-3xl font-bold mb-8 text-center">Galeria</h2>
+        <h2 className="text-white text-5xl font-bold mb-8 text-center">Galeria</h2>
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4">
+            {/* Viewport com padding lateral para não grudar nas bordas */}
+            <div className="flex gap-4 pl-2 pr-2 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6">
               {galleryImages.map((src, index) => (
-                <div key={index} className="flex-[0_0_80%] md:flex-[0_0_30%] lg:flex-[0_0_20%] rounded-xl overflow-hidden">
+                <div
+                  key={index}
+                  className="flex-[0_0_auto] rounded-xl overflow-hidden"
+                  style={{
+                    width: '250px', // largura fixa, ajusta o tamanho das imagens
+                  }}
+                >
                   <img
                     src={src}
                     alt={`Galeria ${index + 1}`}
-                    className="w-full h-64 md:h-48 lg:h-56 object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full aspect-[4/5] object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               ))}

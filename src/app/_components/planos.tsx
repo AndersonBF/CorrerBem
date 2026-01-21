@@ -38,18 +38,7 @@ export function Plans() {
     "https://api.whatsapp.com/send?phone=5549998303859&text=Vim%20pelo%20site%20da%20Assessoria%20Correr%20Bem%20e%20queria%20saber%20mais%20sobre%20a%20assessoria";
 
   return (
-    <section className="bg-[#1C1C1C] py-16 px-4">
-      {/* HEAD - Google Tag Manager */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-NTK5TZ73');`,
-        }}
-      />
-
+    <section className="bg-[#1C1C1C] py-6 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12">
           Nossos Planos
@@ -57,45 +46,57 @@ export function Plans() {
 
         <div className="flex flex-col md:flex-row gap-6 justify-center">
           {plans.map((plan, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-6 flex-1 w-full hover:scale-105 transition-transform duration-300"
-            >
-              <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
-              <p className="text-4xl font-extrabold mb-4">{plan.price}</p>
-              <p className="text-gray-700 mb-6">{plan.description}</p>
+           <div
+  key={index}
+  className="
+    cursor-pointer rounded-2xl p-6 flex-1 w-full bg-white 
+    transition-transform duration-300
+    hover:scale-105
+    hover:shadow-[0_0_20px_rgba(255,165,0,0.6)]
+    hover:bg-orange-500
+  "
+>
+  <h3
+    className="text-2xl font-bold mb-4 transition-colors duration-300
+      hover:text-white"
+  >
+    {plan.name}
+  </h3>
+  <p
+    className="text-4xl font-extrabold mb-4 transition-colors duration-300
+      hover:text-white"
+  >
+    {plan.price}
+  </p>
+  <p
+    className="text-gray-700 mb-6 transition-colors duration-300
+      hover:text-white/80"
+  >
+    {plan.description}
+  </p>
 
-              <div className="flex flex-col gap-3">
-                <a
-                  href={plan.linkPix}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full inline-block hover:bg-orange-600 transition-colors"
-                >
-                  Pagar com PIX (5% de desconto)
-                </a>
-                <a
-                  href={plan.linkCartao}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full inline-block hover:bg-orange-600 transition-colors"
-                >
-                  Pagar com Cartão
-                </a>
-              </div>
-            </div>
+  <div className="flex flex-col gap-3">
+    <a
+      href={plan.linkPix}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full inline-block hover:bg-white hover:text-orange-500 transition-colors"
+    >
+      Pagar com PIX (5% de desconto)
+    </a>
+    <a
+      href={plan.linkCartao}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-orange-500 text-black font-bold py-2 px-4 rounded-lg w-full inline-block hover:bg-white hover:text-orange-500 transition-colors"
+    >
+      Pagar com Cartão
+    </a>
+  </div>
+</div>
+
           ))}
         </div>
-
-        {/* BODY - Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NTK5TZ73"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
 
         <div className="mt-12 text-white">
           <p className="mb-4 text-lg">
