@@ -20,6 +20,11 @@ const galleryImages = [
   '/podio9.png',
   '/podio10.png',
   '/podio11.png',
+  '/podio12.png',
+  '/treinao.JPG',
+  '/corredores.jpg',
+  '/corredor1.jpg',
+
 ];
 
 export function Galeria() {

@@ -14,7 +14,7 @@ const brands = [
 
 export function Footer() {
     return (
-        <section className="bg-[#ff7b00] py-16 text-white">
+        <section className="bg-[#ff3c00] py-4 text-white">
             <div className="container mx-auto px-4">
 
               {/*}  <div className="border-b border-white/20 pb-8">

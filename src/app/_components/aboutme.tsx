@@ -14,7 +14,7 @@ export function AboutMe() {
             alt="Imagem de corrida"
             fill
             className="object-cover rounded-md"
-            quality={100}
+            quality={75}
             priority
           />
         </div>
