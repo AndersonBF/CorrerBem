@@ -24,6 +24,7 @@ const galleryImages = [
   '/treinao.JPG',
   '/corredores.jpg',
   '/corredor1.jpg',
+  '/corredor2.png',
 
 ];
 

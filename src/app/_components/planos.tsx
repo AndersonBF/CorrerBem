@@ -11,7 +11,7 @@ export function Plans() {
       linkPix:
         "https://pix.sejaefi.com.br/pagar/fb964debff9e0f627823acb068602d3ed6c72676.html",
       linkCartao:
-        "https://pagamento.sejaefi.com.br/f6e203ff-bb56-4ee5-9463-7427a47b0cb3",
+        "https://pagamento.sejaefi.com.br/ba9f6524-0a93-4dba-8537-85f3e51386cb",
     },
     {
       name: "Semestral",
